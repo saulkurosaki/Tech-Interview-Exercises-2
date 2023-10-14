@@ -15,8 +15,11 @@ const sumasAcumuladas = (numeros) => {
 
         suma += numero;
 
+        resultado.push(suma);
+
     };
 
+    return resultado;
 };
 
 console.log(sumasAcumuladas([1, 2, 3, 4]));
