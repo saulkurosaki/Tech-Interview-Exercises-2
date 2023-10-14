@@ -70,7 +70,13 @@ const filtrarPorAfiliacion = (afiliacion) => {
 
     for(let personaje in personajesDC){
         
-        if(personajesDC[personaje].afiliacion === afiliacion) resultados.push(personajesDC[personaje]);
+        if(personajesDC[personaje].afiliacion === afiliacion){
+            resultados.push({
+                nombre: personaje,
+                nombreReal: personajesDC[personaje].nombreReal,
+                poderes: personajesDC[personaje].poderes,
+            })
+        };
 
     };
 
